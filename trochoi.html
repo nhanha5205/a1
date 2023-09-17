@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          background-image: url('https://bangxephang.com/wp-content/uploads/2022/10/Hinh-nen-cute-mau-hong-tho-326x580.jpg');
+          background-size: cover; /* Để hình ảnh nền bao phủ toàn bộ màn hình */
+        }
+      </style>
+    
+</head>
+<body>
+    
+    <header>
+        <h1>TRÒ CHƠI ĐOÁN SỐ</h1> </p><left>
+            <img src="https://i.pinimg.com/originals/01/e4/96/01e496a4213686004776c3f102946b2f.gif" width="200" height="100">
+        </left>
+    </header>
+    <p>Hãy chọn một số từ 1 đến 20:
+    <input type="text" id="numberInput">
+    <button onclick="guessNumber()">Đoán</button>
+    <p id="result"></p>
+    <marquee behavior="scroll" direction="right" scrollamount="4" scrolldelay="20" width="50%"><font ="Garamond" size="3" color:#fff> CHÚC BẠN ĐOÁN ĐÚNG NHÉ!..HIHIʕ⁠´⁠•⁠ ⁠ᴥ⁠•̥⁠`⁠ʔ</font></marquee><br>
+
+   
+    <script>
+        function guessNumber() {
+            // Lấy số người dùng nhập
+            var userInput = parseInt(document.getElementById("numberInput").value);
+            
+            // Tạo số ngẫu nhiên từ 1 đến 20
+            var randomNumber = Math.floor(Math.random() * 20) + 1;
+
+            // So sánh số người dùng nhập với số ngẫu nhiên
+            if (userInput === randomNumber) {
+                document.getElementById("result").innerHTML = "Chúc mừng! Bạn đã đoán đúng số.";
+            } else {
+                document.getElementById("result").innerHTML = "Số đúng là " + randomNumber + ". Hãy thử lại!";
+            }
+        }
+    </script>
+    <center>
+        <img src="https://4.bp.blogspot.com/-5Q3XWH8NwSs/XFei24QytUI/AAAAAAAyE2Y/neyF3g2oaRQlDLRWr88sDtTEslzfjl6VQCLcBGAs/s1600/AW3304507_10.gif" width="600" height="555">
+    </center>
+   
+</body>
+</html>
